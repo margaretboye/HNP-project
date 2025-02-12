@@ -10,7 +10,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <div style={{ backgroundColor: "#F3F0EB", minHeight: "100vh" }}>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

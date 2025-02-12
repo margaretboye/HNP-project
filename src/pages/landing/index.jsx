@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Resources from "./components/Resources";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <Products />
       <Resources />
       <Contact />
+      <Footer />
     </div>
   );
 };
