@@ -9,7 +9,7 @@ import { IoIosClose } from "react-icons/io";
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
-    <header className=" flex justify-between items-center px-4 bg-green-600 ">
+    <header className=" flex justify-between items-center px-4 z-50 text-white fixed">
       <img
         src={Logo}
         alt="logo"
@@ -75,12 +75,11 @@ const Navbar = () => {
         <ul className="hidden sm:flex sm:items-start sm:gap-x-2">
           {K.NAVLINKS.map((link, index) => {
             return (
-              <li key={index} className=" py-11 text-white">
+              <li key={index} className=" py-11">
                 <a
                   className="px-3 flex items-center gap-3 hover:text-[#eddd5e] text-sm navlinks"
                   href={link.id}
                 >
-                  <GoDotFill className="text-[#eddd5e] " />
                   {link.name}
                 </a>
               </li>
