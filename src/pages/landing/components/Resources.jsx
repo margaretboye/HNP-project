@@ -1,12 +1,25 @@
 import React from "react";
 import BlogImage1 from "../../../assets/images/blog-img1.webp";
-import { FaTag } from "react-icons/fa";
-import { IoPersonOutline } from "react-icons/io5";
+import BlogImage2 from "../../../assets/images/blog-img2.webp";
+import BlogImage3 from "../../../assets/images/blog-img4.webp";
+import Underline from "../../../assets/images/underline.webp";
 import ResourcesCard from "../../../components/ResourcesCard";
 
 const Resources = () => {
   return (
     <article className="pt-[120px]">
+      <div className="flex flex-col items-center mb-20">
+        <h2 className="text-[45px] font-bold mb-1 text-heading">
+          Latest News &amp; Resources
+        </h2>
+        <div className="">
+          <img src={Underline} alt="" className="underline-img" />
+        </div>
+        <p>
+          Duis eleifend euismod arcu, nec faucibus mauris finibus id. Integer
+          mattis, tellus non finibus rutrum.
+        </p>
+      </div>
       <section className=" ml-5 ">
         <div className="flex items-center  px-3">
           <ResourcesCard
@@ -24,7 +37,7 @@ const Resources = () => {
             }
           />
           <ResourcesCard
-            blogImage={BlogImage1}
+            blogImage={BlogImage2}
             alt={"A man harvesting crops"}
             width={615}
             height={522}
@@ -38,7 +51,7 @@ const Resources = () => {
             }
           />
           <ResourcesCard
-            blogImage={BlogImage1}
+            blogImage={BlogImage3}
             alt={"A man harvesting crops"}
             width={615}
             height={522}

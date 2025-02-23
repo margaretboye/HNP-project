@@ -30,9 +30,9 @@ const ResourcesCard = ({
       </div>
 
       {/* Date */}
-      <div className="absolute left-4 bg-red-500 py-6 top-5 px-4 flex flex-col items-center rounded-full">
-        <span className="block">{day}</span>
-        <span className="block">{monthYear}</span>
+      <div className="absolute left-4 bg-mustard-yellow py-6 top-5 px-4 flex flex-col justify-center text-center rounded-full w-24 h-24">
+        <span className=" color-[#52320a] font-bold text-4xl">{day}</span>
+        <span className=" text-base leading-[1] font-bold">{monthYear}</span>
       </div>
 
       {/* News */}
@@ -40,11 +40,13 @@ const ResourcesCard = ({
         <div className="flex flex-col items-center p-4">
           <div className="flex gap-[18px]">
             <span className="flex items-center gap-2">
-              <IoPersonOutline />
+              <span className="bg-[#278d45]">
+                <IoPersonOutline className="text-white" />
+              </span>
               {author}
             </span>
             <span className="flex items-center gap-2">
-              <FaTag />
+              <FaTag className="text-[#278d45]" />
               {category}
             </span>
           </div>
