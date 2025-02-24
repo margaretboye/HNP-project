@@ -1,10 +1,10 @@
 import React from "react";
 import Underline from "../../../assets/images/underline.webp";
-import Weedex1L from "../../../assets/images/weedex-1l-gallon.jpg";
-import Weedex5L from "../../../assets/images/weedex-5l-gallon.jpg";
-import WeedexPouch from "../../../assets/images/weedex-standup-pouch.jpg";
-import DuakekePouch from "../../../assets/images/duakeke-organic-fertiliser-pouch.jpg";
-import DuakekeSack from "../../../assets/images/duakeke-organic-fertiliser-sack.jpg";
+import Weedex1L from "../../../assets/images/weedex-1l-gallon.png";
+import Weedex5L from "../../../assets/images/weedex-5l-gallon.png";
+import WeedexPouch from "../../../assets/images/weedex-standup-pouch.png";
+import DuakekePouch from "../../../assets/images/duakeke-organic-fertiliser-pouch.png";
+import DuakekeSack from "../../../assets/images/duakeke-organic-fertiliser-sack.png";
 
 const Products = () => {
   return (
