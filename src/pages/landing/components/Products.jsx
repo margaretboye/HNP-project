@@ -1,62 +1,85 @@
 import React from "react";
-import Underline from "../../../assets/images/underline.webp";
 import Weedex1L from "../../../assets/images/weedex-1l-gallon.png";
 import Weedex5L from "../../../assets/images/weedex-5l-gallon.png";
 import WeedexPouch from "../../../assets/images/weedex-standup-pouch.png";
 import DuakekePouch from "../../../assets/images/duakeke-organic-fertiliser-pouch.png";
 import DuakekeSack from "../../../assets/images/duakeke-organic-fertiliser-sack.png";
+import ProductsCard from "../../../components/ProductsCard";
+import Button from "../../../components/Button";
 
 const Products = () => {
   return (
     <section className="py-[120px]">
-      <div>
-        <h2 className="text-[45px] font-bold mb-1 text-heading text-center">
-          Products
-        </h2>
-        <div className="">
-          <img src={Underline} alt="" className="underline-img" />
-        </div>
-      </div>
-      <div className="mx-8">
-        <div className="flex gap-4 ">
-          <div className="border-[1.5] rounded-[20px]">
+      <article className="flex md:flex-row flex-col items-center">
+        {/* Heading */}
+        <div className="px-4">
+          {/* <div>
+            <h2 className="">Products</h2>
+          </div> */}
+
+          {/* Info */}
+          <aside className="">
             <div>
-              <img src={Weedex1L} />
-              <figcaption>
-                Weedex Organic Weedicide <br />1 Litre Gallon
-              </figcaption>
+              <div className="mb-4">
+                <h2 className="md:text-[45px] text-3xl md:leading-14 leading-[36px] font-bold">
+                  We Provide High Quality Agricultural Products.
+                </h2>
+              </div>
+              <p className="md:text-base md:leading-6 tracking-[0.16px] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas ex igula, pulvinar ultrices justo sed, bibendum
+                lobortis nibh. Pellentesque mattis eros sit amet lorem tristique
+                faucibus.
+              </p>
+              <Button type="button" action="View All Products" />
             </div>
-          </div>
-          <div className="">
-            <img src={WeedexPouch} alt="" />
-            <figcaption>
-              Weedex Organic Weedicide
-              <br />
-              Stand up Pouch
-            </figcaption>
-          </div>
-          <div className="">
-            <img src={Weedex5L} alt="" />
-            <figcaption>
-              Weedex Organic Weedicide <br />5 Litre Gallon
-            </figcaption>
-          </div>
-          <div className="">
-            <img src={DuakekePouch} alt="" />
-            <figcaption>
-              Duakeke Organic Fertilizer <br />
-              Stand Up Pouch (5kg)
-            </figcaption>
-          </div>
-          <div className="">
-            <img src={DuakekeSack} alt="" />
-            <figcaption>
-              Duakeke Organic Fertilizer <br />
-              Sack (25kg)
-            </figcaption>
+          </aside>
+        </div>
+
+        {/* Products */}
+        <div className="px-4">
+          <div className="flex gap-4 ">
+            <ProductsCard
+              image={Weedex1L}
+              width={601}
+              height={415}
+              alt=""
+              figCaption="Weedex Weedicide"
+              size="1 Litre Gallon"
+            />
+            <ProductsCard
+              image={Weedex5L}
+              width={601}
+              height={415}
+              alt=""
+              figCaption="Weedex Weedicide"
+              size="5 Litre Gallon"
+            />
+            <ProductsCard
+              image={WeedexPouch}
+              width={601}
+              height={415}
+              alt=""
+              figCaption="Weedex Weedicide"
+              size="Stand Up Pouch (5kg)"
+            />
+            {/* <ProductsCard
+              image={DuakekePouch}
+              alt=""
+              width={557}
+              height={448}
+              figCaption="Duakeke Fertilizer"
+              size="Stand Up Pouch (5kg)"
+            />
+            <ProductsCard
+              image={DuakekeSack}
+              alt=""
+              figCaption="Duakeke Fertilizer"
+              size={"Sack (25kg)"}
+            /> */}
           </div>
         </div>
-      </div>
+      </article>
     </section>
   );
 };
