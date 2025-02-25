@@ -4,22 +4,13 @@ import BlogImage2 from "../../../assets/images/blog-img2.webp";
 import BlogImage3 from "../../../assets/images/blog-img4.webp";
 import Underline from "../../../assets/images/underline.webp";
 import ResourcesCard from "../../../components/ResourcesCard";
+import SectionHeading from "../../../components/SectionHeading";
 
 const Resources = () => {
   return (
     <article className="pt-[120px]">
-      <div className="flex flex-col items-center mb-20">
-        <h2 className="text-[45px] font-bold mb-1 text-heading">
-          Latest News &amp; Resources
-        </h2>
-        <div className="">
-          <img src={Underline} alt="" className="underline-img" />
-        </div>
-        <p>
-          Duis eleifend euismod arcu, nec faucibus mauris finibus id. Integer
-          mattis, tellus non finibus rutrum.
-        </p>
-      </div>
+      <SectionHeading heading={"Resources"} subHeading={"Lorem ipsum dolor"} />
+
       <section className=" ml-5 ">
         <div className="flex items-center  px-3">
           <ResourcesCard

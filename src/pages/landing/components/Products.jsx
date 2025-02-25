@@ -6,19 +6,18 @@ import DuakekePouch from "../../../assets/images/duakeke-organic-fertiliser-pouc
 import DuakekeSack from "../../../assets/images/duakeke-organic-fertiliser-sack.png";
 import ProductsCard from "../../../components/ProductsCard";
 import Button from "../../../components/Button";
+import SectionHeading from "../../../components/SectionHeading";
 
 const Products = () => {
   return (
-    <section className="py-[120px]">
-      <article className="flex md:flex-row flex-col items-center">
+    <section className="pt-[120px]">
+      <article className=" flex flex-col md:items-center">
         {/* Heading */}
-        <div className="px-4">
-          {/* <div>
-            <h2 className="">Products</h2>
-          </div> */}
+        <SectionHeading heading={"Products"} subHeading={"Lorem ipsum dolor"} />
 
+        <div className="px-4">
           {/* Info */}
-          <aside className="">
+          {/* <aside className="">
             <div>
               <div className="mb-4">
                 <h2 className="md:text-[45px] text-3xl md:leading-14 leading-[36px] font-bold">
@@ -33,12 +32,12 @@ const Products = () => {
               </p>
               <Button type="button" action="View All Products" />
             </div>
-          </aside>
+          </aside> */}
         </div>
 
         {/* Products */}
-        <div className="px-4">
-          <div className="flex gap-4 ">
+        <div className="px-4 ">
+          <div className="flex gap-7 md:flex-row flex-col">
             <ProductsCard
               image={Weedex1L}
               width={601}
@@ -63,7 +62,7 @@ const Products = () => {
               figCaption="Weedex Weedicide"
               size="Stand Up Pouch (5kg)"
             />
-            {/* <ProductsCard
+            <ProductsCard
               image={DuakekePouch}
               alt=""
               width={557}
@@ -76,7 +75,7 @@ const Products = () => {
               alt=""
               figCaption="Duakeke Fertilizer"
               size={"Sack (25kg)"}
-            /> */}
+            />
           </div>
         </div>
       </article>

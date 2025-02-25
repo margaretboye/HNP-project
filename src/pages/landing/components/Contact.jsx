@@ -10,7 +10,7 @@ import InputField from "../../../components/InputField";
 const Contact = () => {
   return (
     <section className="py-28">
-      <div className="flex md:flex-row flex-col md:items-center flex-wrap justify-between px-3.5 md:max-w-7xl mx-auto">
+      <div className="flex md:flex-row flex-col md:items-center flex-wrap justify-between px-4 md:max-w-7xl mx-auto">
         {/* Contact Details */}
         <aside aria-labelledby="contact-details" className="md:p-5 mb-9">
           <div className="p-7">

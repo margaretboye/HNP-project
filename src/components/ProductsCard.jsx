@@ -2,20 +2,22 @@ import React from "react";
 
 const ProductsCard = ({ alt, figCaption, size, image, width, height }) => {
   return (
-    <div className="border-[1.5] rounded-[20px]">
-      <div>
+    <div className=" rounded-[20px] shadow-lg hover:shadow-2xl">
+      <div className="">
         <img
           src={image}
           alt={alt}
           width={width}
           height={height}
           loading="lazy"
+          className="hover:scale-110 duration-500"
         />
-        <figcaption>
-          {figCaption} <br />
-          {size}
-        </figcaption>
       </div>
+      <figcaption className="pb-10 text-center">
+        <span className=" leading-5 text-[18px] font-medium">{figCaption}</span>
+        <br />
+        <span className="text-sm font-normal text-forest">{size}</span>
+      </figcaption>
     </div>
   );
 };
