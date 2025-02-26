@@ -1,92 +1,96 @@
-import React from "react";
-import Logo from "../assets/logos/agric-logo.svg";
+import React, { useState } from "react";
+import Logo from "../assets/logos/hye-ne-preko-logo.png";
 import K from "../constants";
-import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
-import { GoDotFill } from "react-icons/go";
 import { IoIosClose } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { GiWoodenFence } from "react-icons/gi";
 
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
+
   return (
-    <header className=" flex justify-between items-center px-4 z-50 text-white fixed">
-      <img
-        src={Logo}
-        alt="logo"
-        className=" w-28 h-28 sm:max-w-full sm:max-h-11"
-        loading="lazy"
-      />
-      <nav>
-        {/* MOBILE VIEW */}
-        {/* HAMBURGER */}
+    <header className="relative bg-white shadow-md">
+      <section className="flex justify-between items-center px-4 py-3 z-50">
+        {/* LOGO */}
+        <div className="flex items-center gap-3">
+          <img src={Logo} alt="logo" className="w-16" loading="lazy" />
+        </div>
+
+        {/* HAMBURGER MENU (Visible on small screens) */}
         <div
-          className="text-white sm:hidden"
-          onClick={() => {
-            setShowMobileNav(!showMobileNav);
-          }}
+          className="sm:hidden text-black cursor-pointer"
+          onClick={() => setShowMobileNav(true)}
         >
           <FiMenu size={30} />
         </div>
-        {/* DARK MODAL */}
-        <div
-          onClick={() => {
-            setShowMobileNav(false);
-          }}
-          className={`${
-            showMobileNav ? "top-0 right-0" : "-right-[100%] -top-0"
-          } py-5 px-8 h-full fixed w-full z-10 bg-black/85  duration-500 sm:hidden`}
-        >
-          <IoIosClose
-            color="white"
-            size={50}
-            className=" top-8 right-8 absolute "
-            onClick={() => {
-              setShowMobileNav(false);
-            }}
-          />
-          {/* MAIN MOBILE LINKS */}
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className={`${
-              showMobileNav
-                ? "top-24 right-8 delay-100"
-                : "-right-full  delay-0"
-            } w-[80%]  flex flex-col   gap-2 p-10 rounded-xl z-100 bg-white absolute  duration-1000 transition-all top-24 right-8`}
-          >
-            {K.NAVLINKS.map((link, index) => (
-              <div className=" flex items-center justify-center gap-4">
-                {link.icon}
 
+        {/* DESKTOP NAVIGATION (Hidden on small screens) */}
+        <nav className="hidden sm:flex items-center gap-5">
+          <ul className="flex gap-x-10 ">
+            {K.NAVLINKS.map((link, index) => (
+              <li key={index} className="py-3 mx-4">
                 <a
-                  key={index}
-                  href={link.id}
-                  className={`${
-                    index == 4 ? "border-none" : ""
-                  } border-b w-full  py-5 px-3 font-medium`}
-                >
-                  {link.name}
-                </a>
-                {/* <MdKeyboardArrowRight color="gray"/> */}
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* AFTER MOBILE VIEW */}
-        <ul className="hidden sm:flex sm:items-start sm:gap-x-2">
-          {K.NAVLINKS.map((link, index) => {
-            return (
-              <li key={index} className=" py-11">
-                <a
-                  className="px-3 flex items-center gap-3 hover:text-[#eddd5e] text-sm navlinks"
+                  className="flex items-center gap-2 hover:text-[#eddd5e] text-[18px] font-medium text-black"
                   href={link.id}
                 >
                   {link.name}
                 </a>
               </li>
-            );
-          })}
-        </ul>
-      </nav>
+            ))}
+          </ul>
+        </nav>
+
+        {/* CALL SUPPORT BUTTON (Only on larger screens) */}
+        <div className="hidden md:flex items-center gap-5">
+          <span className="bg-mustard-yellow p-4 rounded-full inline-flex items-center">
+            <FaPhoneAlt fill="white" />
+          </span>
+
+          <div>
+            <p className="text-green-600">Call Support Today</p>
+            <a
+              href="#"
+              className="flex items-center gap-2 font-medium text-[20px]"
+            >
+              (233) 5554-66798
+            </a>
+          </div>
+
+          <div className="flex bg-black p-4 rounded-full items-center">
+            <GiWoodenFence size={30} fill="white" />
+          </div>
+        </div>
+      </section>
+
+      {/* MOBILE NAVIGATION (Overlay Menu) */}
+      {showMobileNav && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex flex-col items-center justify-center">
+          {/* CLOSE BUTTON */}
+          <IoIosClose
+            size={50}
+            className="absolute top-5 right-5 text-white cursor-pointer"
+            onClick={() => setShowMobileNav(false)}
+          />
+
+          {/* MOBILE LINKS */}
+          <nav className="bg-white p-6 rounded-xl shadow-lg w-[80%] text-center">
+            <ul className="flex flex-col gap-5">
+              {K.NAVLINKS.map((link, index) => (
+                <li key={index} className="border-b pb-2">
+                  <a
+                    className="text-xl font-medium text-black"
+                    href={link.id}
+                    onClick={() => setShowMobileNav(false)}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

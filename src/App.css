@@ -10,10 +10,6 @@ body {
 }
 
 body {
-  background: #eee;
-  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
-  font-size: 14px;
-  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +20,7 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
+  /* text-align: center; */
   font-size: 18px;
   background: #fff;
 
@@ -42,16 +38,40 @@ body {
 }
 
 .hero-overlay {
-  padding: 20px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin-left: auto;
 }
 
 .underline-img {
   max-width: 272px;
   height: 6px;
-  display: block;
-  margin: 8px auto;
+  /* display: block; */
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* hero divider */
+.divider {
+  background-image: url(./assets/images/divider-1.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  height: 15px; /* Adjust height as needed */
+  z-index: 10;
+}
+.divider1 {
+  background-image: url(./assets/images/divider-1.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 15px; /* Adjust height as needed */
+  z-index: 10;
 }

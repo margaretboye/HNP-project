@@ -8,7 +8,7 @@ import SectionHeading from "../../../components/SectionHeading";
 
 const Resources = () => {
   return (
-    <article className="pt-[120px]">
+    <article className="pt-[120px]" id="resources">
       <SectionHeading heading={"Resources"} subHeading={"Lorem ipsum dolor"} />
 
       <section className=" ml-5 ">

@@ -9,7 +9,7 @@ import InputField from "../../../components/InputField";
 
 const Contact = () => {
   return (
-    <section className="py-28">
+    <section className="py-28" id="contact">
       <div className="flex md:flex-row flex-col md:items-center flex-wrap justify-between px-4 md:max-w-7xl mx-auto">
         {/* Contact Details */}
         <aside aria-labelledby="contact-details" className="md:p-5 mb-9">
@@ -110,12 +110,12 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="flex items-center rounded-[55px] bg-[#0D401C] text-white pl-9 py-2.5 text-[16px] font-medium"
+                className="flex items-center rounded-[55px] bg-agro-green text-white pl-9 py-2.5 text-[16px] font-medium"
               >
                 <span className="leading-[1.56] text-base font-medium">
                   Send Message
                 </span>
-                <p className="ml-8 rounded-full bg-[#F8C32C] text-[#0d401c] w-11 h-11 flex justify-center items-center mr-2">
+                <p className="ml-8 rounded-full bg-[#F2CB00] text-[#0d401c] w-11 h-11 flex justify-center items-center mr-2">
                   <IoIosArrowForward />
                 </p>
               </button>

@@ -5,7 +5,7 @@ import AboutImage from "../../../assets/images/greenhouse.jpg";
 const AboutUs = () => {
   return (
     <>
-      <article className="py-[120px]">
+      <article className="py-[120px]" id="about">
         <div>
           <h2 className="text-[45px] font-bold mb-1 text-heading text-center">
             About Us
