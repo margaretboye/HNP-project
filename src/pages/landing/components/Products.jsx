@@ -11,9 +11,9 @@ import SectionHeading from "../../../components/SectionHeading";
 const Products = () => {
   return (
     <section className="pt-[120px]">
+      <SectionHeading heading={"Products"} subHeading={"Lorem ipsum dolor"} />
       <article className=" flex flex-col md:items-center">
         {/* Heading */}
-        <SectionHeading heading={"Products"} subHeading={"Lorem ipsum dolor"} />
 
         <div className="px-4">
           {/* Info */}
