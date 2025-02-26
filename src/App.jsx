@@ -11,7 +11,7 @@ function App() {
   ]);
 
   return (
-    <div style={{ backgroundColor: "#F3F0EB", minHeight: "100vh" }}>
+    <div>
       <RouterProvider router={router} />
     </div>
   );
