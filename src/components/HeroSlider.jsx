@@ -21,14 +21,14 @@ const HeroSlider = ({ HeroImage, alt }) => {
             className="w-12 h-6 max-w-[30px] max-h-[20px] mr-3"
             loading="lazy"
           />
-          <p className="text-mustard-yellow text-base">
+          <p className="text-hnp-yellow text-base">
             Better Agriculture for Better Future
           </p>
         </div>
 
-        <h2 className="text-white text-6xl font-bold leading-[72px] mb-3">
+        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3">
           Hye Ne Preko <br /> Enterprise
-        </h2>
+        </h1>
 
         <img src={Underline} alt="" className="underline-img" />
 
@@ -40,12 +40,12 @@ const HeroSlider = ({ HeroImage, alt }) => {
         <div className="mt-10">
           <button
             type="button"
-            className="flex items-center rounded-[55px] bg-white text-forest pl-9 py-2.5 text-[16px] font-medium"
+            className="flex items-center rounded-[55px] bg-white text-forest pl-9 py-2.5 text-[16px] font-medium hover:bg-deep-green hover:text-"
           >
             <span className="leading-[1.56] text-base font-medium">
               Contact Us
             </span>
-            <p className="ml-8 rounded-full bg-mustard-yellow text-forest w-11 h-11 flex justify-center items-center mr-2">
+            <p className="ml-8 rounded-full bg-hnp-yellow text-black w-11 h-11 flex justify-center items-center mr-2">
               <IoIosArrowForward />
             </p>
           </button>
