@@ -15,7 +15,7 @@ import HeroSlider from "../../../components/HeroSlider";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <section className="relative " id="home">
       <Navbar />
       <div className="absolute ">
         <img src={NavbarDivider} alt="" />
@@ -34,7 +34,7 @@ const Hero = () => {
           <HeroSlider HeroImage={HeroImage3} alt={"tractor"} />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,10 @@ import SectionHeading from "../../../components/SectionHeading";
 const Resources = () => {
   return (
     <article className="pt-[120px]" id="resources">
-      <SectionHeading heading={"Resources"} subHeading={"Lorem ipsum dolor"} />
+      <SectionHeading
+        heading={"From The Blog Post"}
+        subHeading={"Latest News & Resources"}
+      />
 
       <section className=" ml-5 ">
         <div className="flex items-center  px-3">

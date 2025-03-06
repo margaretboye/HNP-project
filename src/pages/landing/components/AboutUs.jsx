@@ -7,7 +7,7 @@ import { GoDash } from "react-icons/go";
 
 const AboutUs = () => {
   return (
-    <article className=" pt-28">
+    <article className=" pt-28" id="about">
       <section className="flex mx-8">
         <div className="inline-block">
           <img src={AboutImage} alt="" className="rounded-3xl" loading="lazy" />

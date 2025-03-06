@@ -7,7 +7,7 @@ const SectionHeading = ({ heading, subHeading }) => {
     <header className="flex flex-col items-center justify-center">
       <h3 className="text-deep-green font-medium mb-4 inline-flex items-center">
         <GoDash fill="#38a030" size={20} />
-        Why Choose Us
+        {heading}
         <GoDash fill="#38a030" size={20} />
       </h3>
 
@@ -15,7 +15,7 @@ const SectionHeading = ({ heading, subHeading }) => {
         className="md:text-[45px] text-3xl font-bold mb-4"
         id="contact-heading"
       >
-        {heading}
+        {subHeading}
       </h2>
 
       {/* <p className="mb-7 text-base">{subHeading}</p> */}
