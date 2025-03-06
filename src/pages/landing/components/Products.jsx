@@ -10,7 +10,7 @@ import SectionHeading from "../../../components/SectionHeading";
 
 const Products = () => {
   return (
-    <section className="pt-[120px]">
+    <section className="pt-[120px]" id="products">
       <SectionHeading heading={"Products"} subHeading={"Lorem ipsum dolor"} />
       <article className=" flex flex-col md:items-center">
         {/* Heading */}

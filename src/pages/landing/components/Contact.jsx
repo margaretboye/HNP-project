@@ -6,10 +6,11 @@ import { MdOutlineContactPage } from "react-icons/md";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import InputField from "../../../components/InputField";
+import Button from "../../../components/Button";
 
 const Contact = () => {
   return (
-    <section className="py-28">
+    <section className="py-28" id="contact">
       <div className="flex md:flex-row flex-col md:items-center flex-wrap justify-between px-4 md:max-w-7xl mx-auto">
         {/* Contact Details */}
         <aside aria-labelledby="contact-details" className="md:p-5 mb-9">
@@ -17,7 +18,7 @@ const Contact = () => {
             <address className="flex flex-col gap-5">
               {/* Address */}
               <p className="flex flex-row items-center gap-5">
-                <span className="p-3 bg-[#0d401c] rounded-full">
+                <span className="p-3 bg-deep-green rounded-full">
                   <IoLocationOutline color="#ffffff" size={20} />
                 </span>
                 <p className="flex flex-col">
@@ -29,7 +30,7 @@ const Contact = () => {
 
               {/* Contact */}
               <p className="flex flex-row items-center gap-5">
-                <span className="p-3 bg-[#0d401c] rounded-full">
+                <span className="p-3 bg-deep-green rounded-full">
                   <MdOutlineContactPage color="#ffffff" size={20} />
                 </span>
 
@@ -41,7 +42,7 @@ const Contact = () => {
 
               {/* Whatsapp */}
               <p className="flex flex-row items-center gap-5">
-                <span className="p-3 bg-[#0d401c] rounded-full">
+                <span className="p-3 bg-deep-green rounded-full">
                   <MdOutlineWhatsapp color="#ffffff" size={20} />
                 </span>
 
@@ -53,7 +54,7 @@ const Contact = () => {
 
               {/* Email */}
               <p className="flex flex-row items-center gap-5">
-                <span className="p-3 bg-[#0d401c] rounded-full">
+                <span className="p-3 bg-deep-green rounded-full">
                   <MdOutlineMarkEmailUnread color="#ffffff" size={20} />
                 </span>
 
@@ -108,17 +109,7 @@ const Contact = () => {
               </label>
 
               {/* Submit Button */}
-              <button
-                type="submit"
-                className="flex items-center rounded-[55px] bg-[#0D401C] text-white pl-9 py-2.5 text-[16px] font-medium"
-              >
-                <span className="leading-[1.56] text-base font-medium">
-                  Send Message
-                </span>
-                <p className="ml-8 rounded-full bg-[#F8C32C] text-[#0d401c] w-11 h-11 flex justify-center items-center mr-2">
-                  <IoIosArrowForward />
-                </p>
-              </button>
+              <Button type={"submit"} action={"Send Message"} />
             </fieldset>
           </form>
         </div>

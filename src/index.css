@@ -2,8 +2,8 @@
 @plugin "daisyui";
 
 @theme {
-  --color-mustard-yellow: #f8c32c;
-  --color-forest: #0d401c;
+  --color-hnp-yellow: #f2cb00;
+  --color-deep-green: #38a030;
+  --color-light-green: #8fc638;
   --color-heading: #072010;
-  --color-new-heading: #8fc638;
 }

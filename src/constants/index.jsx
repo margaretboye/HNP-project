@@ -5,23 +5,28 @@ import { IoCallOutline } from "react-icons/io5";
 const K = {
   NAVLINKS: [
     {
-      name: "HOME",
+      name: "Home",
       icon: <AiOutlineHome size={25} />,
       id: "#home",
     },
     {
-      name: "ABOUT US",
+      name: "About",
       icon: <AiOutlineUser size={23} />,
       id: "#about",
     },
     {
-      name: "SERVICES",
+      name: "Products",
       icon: <RiCustomerServiceLine size={23} />,
-      id: "#services",
+      id: "#products",
+    },
+    {
+      name: "Resources",
+      icon: <RiCustomerServiceLine size={23} />,
+      id: "#resources",
     },
 
     {
-      name: "CONTACT US",
+      name: "Contact",
       icon: <IoCallOutline size={23} />,
       id: "#contact",
     },
