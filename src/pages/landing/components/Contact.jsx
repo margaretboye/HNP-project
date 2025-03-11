@@ -112,6 +112,7 @@ const Contact = () => {
               <Button type={"submit"} action={"Send Message"} />
             </fieldset>
           </form>
+          {/* Enjoy bigger harvests, healthier soil, and fewer weeds with our 100% organic fertilizers and weedicides */}
         </div>
       </div>
     </section>
