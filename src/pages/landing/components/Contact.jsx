@@ -7,13 +7,17 @@ import { MdOutlineWhatsapp } from "react-icons/md";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import InputField from "../../../components/InputField";
 import Button from "../../../components/Button";
+import "../../../App.css";
 
 const Contact = () => {
   return (
     <section className="py-28" id="contact">
-      <div className="flex md:flex-row flex-col md:items-center flex-wrap justify-between px-4 md:max-w-7xl mx-auto">
+      <div className="flex md:flex-row flex-col md:items-center justify-between px-4 md:max-w-7xl mx-auto">
         {/* Contact Details */}
-        <aside aria-labelledby="contact-details" className="md:p-5 mb-9">
+        <aside
+          aria-labelledby="contact-details"
+          className="md:p-5 mb-9 md:min-w-[40%]"
+        >
           <div className="p-7">
             <address className="flex flex-col gap-5">
               {/* Address */}
@@ -21,11 +25,11 @@ const Contact = () => {
                 <span className="p-3 bg-deep-green rounded-full">
                   <IoLocationOutline color="#ffffff" size={20} />
                 </span>
-                <p className="flex flex-col">
+                <span className="inline-flex flex-col">
                   <strong>Address</strong>
                   Prinsengracht 250, 2501016 PM <br />
                   Amsterdam Netherlands
-                </p>
+                </span>
               </p>
 
               {/* Contact */}
@@ -34,10 +38,10 @@ const Contact = () => {
                   <MdOutlineContactPage color="#ffffff" size={20} />
                 </span>
 
-                <p className="flex flex-col">
+                <span className="inline-flex flex-col">
                   <strong>Contact us</strong>
                   <a href="tel:+233123456789">+233 123 456 789</a>
-                </p>
+                </span>
               </p>
 
               {/* Whatsapp */}
@@ -46,10 +50,10 @@ const Contact = () => {
                   <MdOutlineWhatsapp color="#ffffff" size={20} />
                 </span>
 
-                <p className="flex flex-col">
+                <span className="inline-flex flex-col">
                   <strong>WhatsApp</strong>
                   <a href="https://wa.me/233123456789">Chat with us</a>
-                </p>
+                </span>
               </p>
 
               {/* Email */}
@@ -58,10 +62,10 @@ const Contact = () => {
                   <MdOutlineMarkEmailUnread color="#ffffff" size={20} />
                 </span>
 
-                <p className="flex flex-col">
+                <span className="inline-flex flex-col">
                   <strong>Email</strong>
                   <a href="mailto:info@hnp-agro.com">info@hnp-agro.com</a>
-                </p>
+                </span>
               </p>
             </address>
           </div>
@@ -104,7 +108,7 @@ const Contact = () => {
                 <textarea
                   className="rounded-[25.6px] px-6 py-3 w-full bg-[#0d401c0d] border-transparent placeholder-[#072010] hover:bg-white focus:bg-white hover:border-black"
                   placeholder="Message..."
-                  rows={10}
+                  rows={window.innerWidth < 768 ? 6 : 10}
                 ></textarea>
               </label>
 
@@ -112,6 +116,7 @@ const Contact = () => {
               <Button type={"submit"} action={"Send Message"} />
             </fieldset>
           </form>
+          {/* Enjoy bigger harvests, healthier soil, and fewer weeds with our 100% organic fertilizers and weedicides */}
         </div>
       </div>
     </section>

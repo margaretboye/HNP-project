@@ -5,8 +5,8 @@ import { TiTick } from "react-icons/ti";
 
 const AboutCards = ({ heading, subText }) => {
   return (
-    <div className="flex items-center justify-center gap-7 ">
-      <span className="bg-deep-green rounded-full p-1 inline-block">
+    <div className="flex items-center w-full">
+      <span className="bg-deep-green rounded-full p-1 inline-block mr-4">
         <TiTick fill="#ffffff" size={20} />
       </span>
 

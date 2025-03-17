@@ -4,7 +4,6 @@ import K from "../constants";
 import { FiMenu } from "react-icons/fi";
 import { IoIosClose } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
-import { GiWoodenFence } from "react-icons/gi";
 
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -27,7 +26,7 @@ const Navbar = () => {
 
         {/* DESKTOP NAVIGATION (Hidden on small screens) */}
         <nav className="hidden sm:flex items-center gap-5">
-          <ul className="flex gap-x-10 ">
+          <ul className="flex gap-x-10">
             {K.NAVLINKS.map((link, index) => (
               <li key={index} className="py-3 mx-4">
                 <a
@@ -55,10 +54,6 @@ const Navbar = () => {
             >
               (233) 5554-66798
             </a>
-          </div>
-
-          <div className="flex bg-black p-4 rounded-full items-center">
-            <GiWoodenFence size={30} fill="white" />
           </div>
         </div>
       </section>

@@ -65,6 +65,7 @@ body {
   height: 15px; /* Adjust height as needed */
   z-index: 10;
 }
+
 .divider1 {
   background-image: url(./assets/images/divider-1.webp);
   background-size: cover;
@@ -75,3 +76,50 @@ body {
   height: 15px; /* Adjust height as needed */
   z-index: 10;
 }
+
+/* Tagline Section */
+.tagline-img {
+  background-image: url(./assets/images/countryside-people-working-field.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Set a fixed height or use min-height */
+  position: relative; /* Needed for the overlay */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  color: white; /* Ensure text is visible */
+}
+
+/* Dark overlay */
+.tagline-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 = 50% dark) */
+  z-index: 1; /* Place overlay above the background image */
+}
+
+/* Ensure text is above the overlay */
+.tagline-img h2 {
+  position: relative;
+  z-index: 2; /* Place text above the overlay */
+  padding: 20px; /* Add padding for better readability */
+  text-align: center; /* Center-align text */
+}
+
+@media (min-width: 808px) and (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-details {
+    min-width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* ANIMATIONS */
