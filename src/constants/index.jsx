@@ -19,11 +19,6 @@ const K = {
       icon: <RiCustomerServiceLine size={23} />,
       id: "#products",
     },
-    {
-      name: "Resources",
-      icon: <RiCustomerServiceLine size={23} />,
-      id: "#resources",
-    },
 
     {
       name: "Contact",

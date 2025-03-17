@@ -5,6 +5,15 @@ import "../App.css";
 import { IoIosArrowForward } from "react-icons/io";
 
 const HeroSlider = ({ HeroImage, alt }) => {
+  const handleClick = () => {
+    // Find the contact section by its ID
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      // Scroll to the contact section smoothly
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <div className="relative">
@@ -26,7 +35,7 @@ const HeroSlider = ({ HeroImage, alt }) => {
           </p>
         </div>
 
-        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3">
+        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3 slide-in">
           Hye Ne Preko <br /> Enterprise
         </h1>
 
@@ -40,7 +49,8 @@ const HeroSlider = ({ HeroImage, alt }) => {
         <div className="mt-10">
           <button
             type="button"
-            className="flex items-center rounded-[55px] bg-white text-forest pl-9 py-2.5 text-[16px] font-medium hover:bg-deep-green hover:text-"
+            className="flex items-center rounded-[55px] bg-white text-forest pl-9 py-2.5 text-[16px] font-medium hover:bg-deep-green hover:text-white hover:scale-110 transition-all duration-500 ease-in-out"
+            onClick={handleClick}
           >
             <span className="leading-[1.56] text-base font-medium">
               Contact Us
