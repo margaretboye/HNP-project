@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logos/hye-ne-preko-logo.png";
+import Logo from "../assets/logos/logo.png";
 import K from "../constants";
 import { FiMenu } from "react-icons/fi";
 import { IoIosClose } from "react-icons/io";

@@ -1,6 +1,6 @@
 import React from "react";
 import PixelShape from "../../../assets/images/pxl-heading-shape.webp";
-import { IoIosArrowForward } from "react-icons/io";
+import { GoDash } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineContactPage } from "react-icons/md";
 import { MdOutlineWhatsapp } from "react-icons/md";
@@ -74,6 +74,11 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="md:w-[58.33%] box-border">
           <header className="pl-3">
+            <h3 className="text-deep-green font-medium mb-4 inline-flex items-center">
+              <GoDash fill="#38a030" size={20} />
+              Let’s Boost Your Harvest
+              <GoDash fill="#38a030" size={20} />
+            </h3>
             <h2
               className="md:text-[45px] text-3xl font-bold mb-4"
               id="contact-heading"

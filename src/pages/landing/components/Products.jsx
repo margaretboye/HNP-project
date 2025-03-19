@@ -11,29 +11,12 @@ import SectionHeading from "../../../components/SectionHeading";
 const Products = () => {
   return (
     <section className="pt-[120px]" id="products">
-      <SectionHeading heading={"Products"} subHeading={"Lorem ipsum dolor"} />
+      <SectionHeading
+        heading={"Shop Our Products"}
+        subHeading={"Organic Products For Farms"}
+      />
       <article className=" flex flex-col md:items-center">
         {/* Heading */}
-
-        <div className="px-4">
-          {/* Info */}
-          {/* <aside className="">
-            <div>
-              <div className="mb-4">
-                <h2 className="md:text-[45px] text-3xl md:leading-14 leading-[36px] font-bold">
-                  We Provide High Quality Agricultural Products.
-                </h2>
-              </div>
-              <p className="md:text-base md:leading-6 tracking-[0.16px] mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas ex igula, pulvinar ultrices justo sed, bibendum
-                lobortis nibh. Pellentesque mattis eros sit amet lorem tristique
-                faucibus.
-              </p>
-              <Button type="button" action="View All Products" />
-            </div>
-          </aside> */}
-        </div>
 
         {/* Products */}
         <div className="px-4 ">
