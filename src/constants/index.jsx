@@ -19,12 +19,21 @@ const K = {
       icon: <RiCustomerServiceLine size={23} />,
       id: "#products",
     },
-
     {
       name: "Contact",
       icon: <IoCallOutline size={23} />,
       id: "#contact",
     },
+  ],
+
+  DISTRIBUTORS: [
+    { id: 1, name: "Distributor 1" },
+    { id: 2, name: "Distributor 2" },
+  ],
+
+  GALLERY: [
+    { src: "/images/gallery1.jpg", alt: "Gallery Image 1" },
+    { src: "/images/gallery2.jpg", alt: "Gallery Image 2" },
   ],
 };
 
