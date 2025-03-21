@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from "../../../assets/images/about-image.webp";
+import AboutImage from "../../../assets/images/about-image3.jpg";
 import AboutCards from "../../../components/AboutCards";
 import PixelShape from "../../../assets/images/pxl-heading-shape.webp";
 import { GoDash } from "react-icons/go";

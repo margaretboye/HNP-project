@@ -25,15 +25,11 @@ const K = {
       id: "#contact",
     },
   ],
-
   DISTRIBUTORS: [
-    { id: 1, name: "Distributor 1" },
-    { id: 2, name: "Distributor 2" },
-  ],
-
-  GALLERY: [
-    { src: "/images/gallery1.jpg", alt: "Gallery Image 1" },
-    { src: "/images/gallery2.jpg", alt: "Gallery Image 2" },
+    { name: "Distributor A", location: "Accra, Ghana" },
+    { name: "Distributor B", location: "Kumasi, Ghana" },
+    { name: "Distributor C", location: "Tamale, Ghana" },
+    { name: "Distributor D", location: "Takoradi, Ghana" },
   ],
 };
 
