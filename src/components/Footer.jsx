@@ -32,10 +32,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav
-          aria-label="Footer Navigation"
-          className="flex flex-col gap-4 justify-center items-center"
-        >
+        <nav aria-label="Footer Navigation" className="flex flex-col gap-4 ">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
           <ul className="flex flex-col gap-2">
             {K.NAVLINKS.map((link, index) => (
@@ -52,7 +49,7 @@ const Footer = () => {
         </nav>
 
         {/* Contact Us Section */}
-        <div className="flex flex-col gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4">
           <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
           <ul className="flex flex-col gap-2">
             <li>
@@ -69,14 +66,6 @@ const Footer = () => {
                 className="text-sm font-medium hover:underline hover:underline-offset-4 hover:[text-decoration-thickness:2px] hover:[text-decoration-color:#38a030]"
               >
                 Customer Support
-              </a>
-            </li>
-            <li>
-              <a
-                href="#find-distributor"
-                className="text-sm font-medium hover:underline hover:underline-offset-4 hover:[text-decoration-thickness:2px] hover:[text-decoration-color:#38a030]"
-              >
-                Find a Distributor
               </a>
             </li>
           </ul>
