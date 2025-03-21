@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import Navbar from "../../../components/Navbar";
-import HeroImage3 from "../../../assets/images/herbicide.jpg";
-import HeroImage1 from "../../../assets/images/maize-farm.jpg";
-import HeroImage2 from "../../../assets/images/hero-image2.webp";
+import HeroImage1 from "../../../assets/images/hero-image1.jpg";
+import HeroImage2 from "../../../assets/images/hero-image3.jpg";
+import HeroImage3 from "../../../assets/images/maize-farm.jpg";
 import NavbarDivider from "../../../assets/images/divider-1.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -27,7 +27,7 @@ const Hero = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <HeroSlider HeroImage={HeroImage2} alt={"a man spraying a farm"} />
+          <HeroSlider HeroImage={HeroImage2} alt={"maize farm"} />
         </SwiperSlide>
 
         <SwiperSlide>

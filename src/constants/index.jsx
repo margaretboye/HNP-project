@@ -19,12 +19,17 @@ const K = {
       icon: <RiCustomerServiceLine size={23} />,
       id: "#products",
     },
-
     {
       name: "Contact",
       icon: <IoCallOutline size={23} />,
       id: "#contact",
     },
+  ],
+  DISTRIBUTORS: [
+    { name: "Distributor A", location: "Accra, Ghana" },
+    { name: "Distributor B", location: "Kumasi, Ghana" },
+    { name: "Distributor C", location: "Tamale, Ghana" },
+    { name: "Distributor D", location: "Takoradi, Ghana" },
   ],
 };
 
