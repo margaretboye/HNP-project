@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from "../../../assets/images/about-image1.jpg";
+import AboutImage from "../../../assets/images/local-farmer-small.jpg";
 import AboutCards from "../../../components/AboutCards";
 import PixelShape from "../../../assets/images/pxl-heading-shape.webp";
 import { GoDash } from "react-icons/go";
@@ -8,19 +8,19 @@ const AboutUs = () => {
   return (
     <article className="max-w-7xl mx-auto pt-28 px-4 sm:px-8" id="about">
       {/* Flex Container for Image and Text Section */}
-      <section className="flex flex-col md:flex-row gap-8">
+      <section className="flex flex-col md:flex-row">
         {/* Image Section */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 flex justify-center items-center min-h-[400px] overflow-hidden">
           <img
             src={AboutImage}
-            alt=""
-            className="rounded-3xl w-full h-auto"
+            alt="Local Farmer"
+            className="rounded-3xl w-full max-w-[500px] h-auto object-cover"
             loading="lazy"
           />
         </div>
 
         {/* Text Section */}
-        <section className="w-full md:w-1/2">
+        <section className="w-full md:w-1/2 flex flex-col">
           {/* Page Title */}
           <div className="md:mx-10">
             <header className="">
