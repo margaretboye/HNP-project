@@ -3,6 +3,7 @@ import Navbar from "../../../components/Navbar";
 import HeroImage1 from "../../../assets/images/hero-image1.jpg";
 import HeroImage2 from "../../../assets/images/hero-image3.jpg";
 import HeroImage3 from "../../../assets/images/maize-farm.jpg";
+import HeroImage4 from "../../../assets/images/man-spraying-field.jpg";
 import NavbarDivider from "../../../assets/images/divider-1.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -32,6 +33,10 @@ const Hero = () => {
 
         <SwiperSlide>
           <HeroSlider HeroImage={HeroImage3} alt={"tractor"} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <HeroSlider HeroImage={HeroImage4} alt={"tractor"} />
         </SwiperSlide>
       </Swiper>
     </section>
