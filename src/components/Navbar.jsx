@@ -30,7 +30,7 @@ const Navbar = () => {
             {K.NAVLINKS.map((link, index) => (
               <li key={index} className="py-3 mx-4">
                 <a
-                  className="flex items-center gap-2 text-[18px] font-medium hover:underline hover:underline-offset-4 hover:[text-decoration-thickness:2px] hover:[text-decoration-color:#38a030]"
+                  className="flex items-center gap-2 text-[18px] font-medium underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-[#f2cb00] transition-all duration-200"
                   href={link.id}
                 >
                   {link.name}
