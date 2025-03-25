@@ -24,6 +24,11 @@ const K = {
       icon: <IoCallOutline size={23} />,
       id: "#contact",
     },
+    {
+      name: "Distributors",
+      icon: <IoCallOutline size={23} />,
+      id: "#footer",
+    },
   ],
   DISTRIBUTORS: [
     { name: "Distributor A", location: "Accra, Ghana" },

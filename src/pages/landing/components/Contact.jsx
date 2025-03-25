@@ -111,7 +111,13 @@ const Contact = () => {
               {/* Message Box */}
               <label className="w-full mb-7">
                 <textarea
-                  className="rounded-[25.6px] px-6 py-3 w-full bg-[#0d401c0d] border-transparent placeholder-[#072010] hover:bg-white focus:bg-white hover:border-black"
+                  className="rounded-[25.6px] px-6 py-3 w-full 
+    bg-[#0d401c0d] border border-transparent
+    placeholder-[#072010] 
+    hover:bg-white hover:border-black hover:border-solid
+    focus:bg-white focus:border-black/70 focus:border-solid
+    transition-all duration-200
+    resize-none"
                   placeholder="Message..."
                   rows={window.innerWidth < 768 ? 6 : 10}
                 ></textarea>
