@@ -43,7 +43,7 @@ const HeroSlider = ({ HeroImage, alt }) => {
           </p>
         </div>
 
-        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3 slide-in-from-bottom">
+        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3 ">
           Hye Ne Preko <br /> Enterprise
         </h1>
 
