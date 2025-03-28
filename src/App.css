@@ -127,3 +127,9 @@ body {
 .swiper-button-next-custom {
   z-index: 50 !important;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-overlay {
+    padding: 40px 40px 40px 70px;
+  }
+}

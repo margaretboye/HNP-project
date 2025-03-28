@@ -29,10 +29,10 @@ const Hero = () => {
 
       <div className="relative">
         {/* Custom Navigation Buttons */}
-
-        <div className="absolute top-1/2 left-4 z-10 cursor-pointer transition-all swiper-button-prev-custom group">
+        {/* Previous Button */}
+        <div className="absolute md:left-4 top-1/2 left-2 z-10 cursor-pointer transition-all swiper-button-prev-custom group md:-w[70px] md:h-[40px]">
           <svg
-            className="rotate-180"
+            className="rotate-180 h-5 md:w-14 md:h-8 lg:w-[70px] lg:h-[40px] w-14"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 986.06 250.15"
             width="70"
@@ -52,8 +52,9 @@ const Hero = () => {
         </div>
 
         {/* Next Button */}
-        <div className="absolute top-1/2 right-4 z-10 cursor-pointer hover:fill-[#f2cb00] transition-all swiper-button-next-custom group">
+        <div className="absolute top-1/2 right-2 md:right-2 z-10 cursor-pointer hover:fill-[#f2cb00] transition-all swiper-button-next-custom group">
           <svg
+            className="h-5 md:w-14 md:h-8 lg:w-[70px] lg:h-[40px] w-14"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 986.06 250.15"
             width="70"

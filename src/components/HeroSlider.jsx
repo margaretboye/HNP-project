@@ -43,8 +43,9 @@ const HeroSlider = ({ HeroImage, alt }) => {
           </p>
         </div>
 
-        <h1 className="text-white text-6xl font-bold leading-[72px] mb-3 slide-in-from-bottom">
-          Hye Ne Preko <br /> Enterprise
+        <h1 className="text-white sm:text-5xl font-bold sm:leading-[72px] mb-3 text-3xl leading-11">
+          Organic Agrochemicals for <br />
+          Healthier Crops & Better <br /> Harvest
         </h1>
 
         <img src={Underline} alt="" className="underline-img scale-in" />

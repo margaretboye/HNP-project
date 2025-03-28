@@ -20,7 +20,7 @@ const AboutUs = () => {
         </div>
 
         {/* Text Section */}
-        <section className="w-full md:w-1/2 flex flex-col">
+        <section className="w-full md:w-1/2 flex flex-col pt-6">
           {/* Page Title */}
           <div className="md:mx-10">
             <header className="">
