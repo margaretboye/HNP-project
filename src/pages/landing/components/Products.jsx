@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <section className="pt-[120px]" id="products">
       <SectionHeading
-        heading={"Shop Our Products"}
+        heading={"Our Products"}
         subHeading={"Organic Products For Farms"}
       />
       <article className=" flex flex-col md:items-center">
