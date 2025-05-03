@@ -49,10 +49,10 @@ const Navbar = () => {
           <div>
             <p className="text-green-600">Call Support Today</p>
             <a
-              href="#"
+              href="tel: +233553843632"
               className="flex items-center gap-2 font-medium text-[20px]"
             >
-              (233) 5554-66798
+              (233) 55-384-3632
             </a>
           </div>
         </div>

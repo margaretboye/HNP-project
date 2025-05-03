@@ -40,7 +40,7 @@ const Contact = () => {
 
                 <span className="inline-flex flex-col">
                   <strong>Contact us</strong>
-                  <a href="tel:+233123456789">+233 123 456 789</a>
+                  <a href="tel:+233553843632">+233 553 843 632</a>
                 </span>
               </p>
 
@@ -52,7 +52,7 @@ const Contact = () => {
 
                 <span className="inline-flex flex-col">
                   <strong>WhatsApp</strong>
-                  <a href="https://wa.me/233123456789">Chat with us</a>
+                  <a href="https://wa.me/233553843632">Chat with us</a>
                 </span>
               </p>
 

@@ -82,6 +82,7 @@ const Hero = () => {
           pagination={{ clickable: true }}
           effect="fade"
           autoplay={{ delay: 4000, disableOnInteraction: false }}
+          loop={true}
           className="mySwiper"
         >
           <SwiperSlide>
